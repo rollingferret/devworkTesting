@@ -1,0 +1,1631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Shouldn't need below. Old standard. -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Add dark mode if time-->
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At-Home Parasite Stool Test (for humans)</title>
+    <meta name="description" content="We've found the most accurate home parasite stool test for intestinal parasite testing in human. It's an at home test that can find dozens of parasites.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;550;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .h1css {
+            color: #005DA4; /* dark blue color */
+            font-family: 'Montserrat', sans-serif; /* Montserrat font, with sans-serif as a fallback */
+            font-size: 2.5rem; /* 3.5rem replicates figma but feels big */
+            font-style: normal; /* Normal font style */
+            font-weight: 700; /* Font weight 700 (bold) */
+            line-height: normal; /* Normal line height */
+            letter-spacing: 0.4px; /* Letter spacing 0.4 pixels */
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* .ultrawide-logo {
+            max-height: 100px;
+        } */
+
+        .custom-lead {
+            color: #153E79;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.75rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 2.4px;
+        }
+
+        .star {
+            width: 30px; /* Set the width and height of the stars as needed */
+            height: 30px;
+            margin: 0 0; /* Adjust the margin between stars */
+        }
+
+        .reviews-link {
+            margin-top: 1px;
+            color: #153E79;
+            font-family: 'Lora', serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .description {
+            color: #153E79;
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .custom-text-style {
+            color: #153E79;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 550;
+            line-height: normal;
+            letter-spacing: 1.5px;
+        }
+
+        .price {
+            color: #FF0017;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 3.6px;
+        }
+
+        .shipping-info {
+            color: #FF0017;
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-left: 10px;
+        }
+
+        .price-container {
+
+        }
+
+        .custom-buy-button {
+            background-color: #689574;
+            color: #F9F6EE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.4px;
+            width: 100%;
+            border: none;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .contact-info {
+            width: 100%;
+            height: 100px;
+            background: #005DA4;
+            text-align: center;
+            padding: 3rem;
+        }
+
+        .questions-text {
+            color: #F9F6EE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 2.4px;
+        }
+
+        .contact-text {
+            color: #F9F6EE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.8px;
+        }
+
+        .button-container {
+            justify-content: center; 
+        }
+
+        .section-title {
+            color: #005DA4;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+        }
+
+        .section-title-desc {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 2.4px;
+        }
+
+        .category-header {
+            color: #0094FF;
+            font-family: 'Lora', serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-size: 1.1rem;
+            letter-spacing: 1.8px;
+            margin-top: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .parasite-list {
+            color: #153E79;
+            font-family: 'Lora', serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 1rem;
+            letter-spacing: 0.72px;
+        }
+
+        .image-caption {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        li {
+            margin-bottom: 0.1rem;
+        }
+
+        .issues-css {
+            color: #F9F6EE;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.8px;
+        }
+        
+        .questions-css {
+            color: #0094FF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.4px;
+        }
+
+        .equal-height-img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .kit-desc {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .find-rare-parasites-title {
+            color: #005DA4;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.4px;
+            text-align: center;
+        }
+
+        .bg-section {
+            background-color: transparent;
+        }
+
+        .list-css {
+            color: #005DA4;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            text-align: left;
+        }
+
+        .list-css-desc {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: left;
+        }
+
+        .lab-css {
+            color: #0094FF;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 1.8px;
+            text-align: left;
+        }
+
+
+        .lab-css-desc {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.72px;
+            text-align: left;
+        }
+
+        .review-name {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .verified-css {
+            color: #0094FF;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .date-css {
+            color: #153E79;
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        
+
+        .actual-review-css {
+            color: #005DA4;
+            font-family: 'Lora', serif;
+            font-size: 1.1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .recommend-friend-css {
+            color: #0094FF;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-style: italic;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.8px;
+        }
+
+        .footer-bg {
+            background-color: #005DA4; /* Adjust the color to match your design */
+            text-align: center;
+            padding: 1.25rem 0; /* Adjust padding as needed */
+        }
+
+
+        .verified-icon {
+            height: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .thumbs-up {
+            display: flex;
+            align-items: center; /* Vertically center align items */
+            font-size: 1rem; /* Adjust font size as needed */
+        }
+
+        .thumbsup {
+            width: 1.25rem; /* Adjust width as needed */
+            height: 1.25rem; /* Adjust height as needed */
+            margin-right: 10px; /* Spacing between the icon and the text */
+        }
+
+        .footer-logo {
+            width: auto; /* Adjust as needed for larger screens */
+            height: 90%; /* Maintain aspect ratio */
+        }
+
+        /* Define styles for breakpoints */
+        .bg-xs { background-color: red; }
+        .bg-sm { background-color: orange; }
+        .bg-md { background-color: yellow; }
+        .bg-lg { background-color: green; }
+        .bg-xl { background-color: blue; }
+
+        /* Custom styles for extending container width on ultra-wide screens */
+        /* @media (min-width: 1920px) {
+            .container {
+                max-width: 70%;
+            }
+        } */
+
+        @media (min-width: 575.98px) { 
+            .contact-info {
+                padding: 4rem;
+            }
+        }
+
+        /* Extra small devices (phones, less than 576px) */
+        @media (max-width: 575.98px) { 
+            .h1css {
+                font-size: 1.1rem; /* Smaller font size for h1 */
+            }
+            .custom-lead {
+                font-size: 1rem; /* Smaller font size for custom lead */
+            }
+            .description {
+                font-size: 1rem; /* Smaller font size for description */
+            }
+            .custom-text-style {
+                font-size: 0.9rem; /* Adjust as needed */
+            }
+            .price {
+                font-size: 1.75rem; /* Smaller font size for price */
+            }
+            .shipping-info {
+                font-size: 1rem; /* Adjust as needed */
+            }
+            .custom-buy-button {
+                font-size: 1.25rem; /* Smaller font size for button */
+                padding: 1rem 1rem; /* Adjust padding as needed */
+            }
+            .questions-text {
+                font-size: 1.25rem;
+            }
+            .contact-text {
+                font-size: 0.8rem;
+                letter-spacing: 0.5px;
+            }
+            .container {
+                padding-left: 15px; /* Adjust as needed */
+                padding-right: 15px; /* Adjust as needed */
+            }
+            .star {
+                width: 17px; /* Smaller width for star */
+                height: 17px; /* Smaller height for star */
+            }
+            .reviews-link {
+                font-size: 0.75rem; /* Smaller font size for reviews link */
+            }
+            .inner-product-image {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+                letter-spacing: 0.3px;
+            }
+
+            .section-title-desc {
+                font-size: 0.8rem;
+                letter-spacing: 0.8px;
+            }
+
+            .category-header {
+                font-size: 0.9rem;
+                letter-spacing: 1.8px;
+            }
+
+            .parasite-list {
+                font-size: 0.8rem;
+                letter-spacing: 0.5px;
+            }
+
+            .image-caption {
+                font-size: 0.7rem;
+            }
+
+            .issues-css {
+                font-size: 0.8rem;
+                letter-spacing: 0.1px;
+            }
+
+            .questions-css {
+                font-size: 0.8rem;
+                letter-spacing: 0.1px;
+            }
+
+            .equal-height-img {
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .bg-section {
+                background-color: #005DA4;
+            }
+
+            .find-rare-parasites-title {
+                color: white; /* Revert text color */
+                font-size: 0.9rem;
+                letter-spacing: 0.1px;
+                font-weight: 500;
+            }
+
+            .find-rare-parasites-title {
+                text-align: left;  /* Align text to the left */
+                margin: 0;
+            }
+
+            .list-css {
+                font-size: 1rem;
+            }
+            .list-css-desc {
+                font-size: 0.8rem;
+            }
+
+            .lab-css {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+
+
+            .lab-css-desc {
+                font-size: 0.8rem;
+                font-style: normal;
+                letter-spacing: 0.5px;
+                text-align: left;
+            }
+
+            .review-name {
+                font-size: 1rem;
+            }
+
+            .verified-css {
+                font-size: 0.8rem;
+            }
+
+            .date-css {
+                font-size: 0.8rem;
+            }
+
+            .actual-review-css {
+                font-size: 1rem;
+            }
+
+            .recommend-friend-css {
+                font-size: 1rem;
+            } 
+
+            .footer-logo {
+                width: 65%; /* Smaller width for mobile devices */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+        }
+
+        /* XS to MD screens (up to 991.98px) */
+        @media (max-width: 991.98px) {
+            .custom-buy-button {
+                width: 80%;
+            }
+
+            .price-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        /* LG screens and above (992px and up) */
+        @media (min-width: 992px) {
+            .custom-buy-button {
+                width: 100%;
+            }
+
+            .product-info {
+                margin-bottom: 5rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar pt-3">
+        <div class="container">
+            <div class="col-7 col-md-5 col-lg-4"> <!-- More space on small screens, adjust as needed -->
+                <a class="navbar-brand" href="https://www.parasites.org/">
+                    <img src="parasiteLogo.png" alt="Logo" class="img-fluid ultrawide-logo">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-2 product-info">
+        <div class="row">
+            <!-- Image Column for Desktop View -->
+
+            <!-- Smaller image, worried quality of larger is pixelated -->
+            <!-- <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center">
+                <img src="parasiteKit.png" alt="Product Image" class="img-fluid">
+            </div> -->
+
+            <div class="col-lg-6 d-none d-lg-flex justify-content-end align-items-center">
+                <div class="image-container">
+                    <img src="parasiteKit.png" alt="Product Image" class="img-fluid w-100">
+                </div>
+            </div>
+            
+            
+            <!-- Content Column for Mobile and Desktop -->
+            <div class="col-lg-6">
+                <h1 class="mb-4 h1css">Home Stool Test Tells You If You Have Parasites</h1>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="custom-lead mb-2">At Home Gut Parasites Test</h2> <!-- Added mb-2 class for margin-bottom -->
+                        <div class="stars-and-reviews mb-5 d-flex align-items-center">
+                            <div>
+                                <a href="#reviews"><img src="star.svg" alt="Star 1" class="star"></a>
+                                <a href="#reviews"><img src="star.svg" alt="Star 2" class="star"></a>
+                                <a href="#reviews"><img src="star.svg" alt="Star 3" class="star"></a>
+                                <a href="#reviews"><img src="star.svg" alt="Star 4" class="star"></a>
+                                <a href="#reviews"><img src="star.svg" alt="Star 5" class="star"></a>
+                            </div>
+                            <a href="#reviews" class="ms-2 reviews-link"><span class="num-reviews">21</span> Reviews</a>
+                        </div>
+                                                                             
+                    </div>
+                </div>
+
+    
+                <!-- Image for Mobile View -->
+                <div class="d-lg-none mb-5 d-flex justify-content-center inner-product-image">
+                    <img src="parasiteKit.png" alt="Product Image" class="img-fluid">
+                </div>
+                
+                <p class="description mb-5">This at-home test checks for 31 parasites, 5 fungi (candida) and 11 other markers of digestive health.</p>
+                <div class="d-flex align-items-center mb-2">
+                    <img src="microscope.svg" alt="Icon" width="40" height="40" class="me-2">
+                    <span class="custom-text-style ms-3">Finds 31 parasites + candida</span>
+                </div>
+                <div class="d-flex align-items-center mb-5">
+                    <img src="testtubes.svg" alt="Icon" width="40" height="40" class="me-2">
+                    <span class="custom-text-style ms-3">At-home stool sample collection</span>
+                </div>
+                
+                <div class="price-container d-flex align-items-center mb-3">
+                    <span class="price">$245</span>
+                    <span class="shipping-info">free shipping both ways</span>
+                </div>
+                
+                <div class="button-container d-flex justify-content-center">
+                    <a href="https://www.parasites.org/checkout/gut-parasite-test" class="btn btn-primary custom-buy-button">Order Test Kit</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info mt-5 d-flex flex-column justify-content-center">
+        <div class="questions-text mb-2">Questions?</div>
+        <div class="contact-text">Call or text us at (303)-699-9474</div>
+    </div>
+
+    <div class="container mt-4 mt-lg-5">
+        <h2 class="section-title">What Parasites Can This Test Find?</h2>
+        <p class="section-title-desc">The Precise Parasites Home Test Kit finds 31 parasites, 5 fungi, 11 markers of digestive health.</p>
+        
+        <div class="row">
+            <!-- Tapeworms -->
+            <div class="col-md-6 order-0 order-md-0">
+                <h3 class="category-header">5 Tapeworms (cestoda)</h3>
+                <ol class="parasite-list">
+                    <li>Taenia solium / taenia saginata</li>
+                    <li>Hymenoplepis nana</li>
+                    <li>Hymenolepis diminuta</li>
+                    <li>Dipylidium caninum</li>
+                    <li>Diphyllobothrium latum</li>
+                </ol>
+            </div>
+    
+            <!-- Microscopic Parasites -->
+            <div class="col-md-6 order-1 order-md-2">
+                <h3 class="category-header">14 Microscopic Parasites (protozoa)</h3>
+                <ol class="parasite-list">
+                    <li>Entamoeba coli</li>
+                    <li>E. histolytica / E. dispar</li>
+                    <li>Entamoeba hartmanni</li>
+                    <li>Endolimax nana</li>
+                    <li>Giardia lamblia</li>
+                    <li>Chilomastix mesnili</li>
+                    <li>Balantidium coli</li>
+                    <li>Trichomonas hominis</li>
+                    <li>Dientamoeba fragilis</li>
+                    <li>Cryptosporidium parvum</li>
+                    <li>Cyclospora cayetanensis</li>
+                    <li>Blastocystis hominis</li>
+                </ol>
+            </div>
+    
+            <!-- Roundworms -->
+            <div class="col-md-6 order-2 order-md-3">
+                <h3 class="category-header">8 Roundworms (nematoda)</h3>
+                <ol class="parasite-list">
+                    <li>Ascaris lumbricoides</li>
+                    <li>Ancylostoma/Necator</li>
+                    <li>Strongyloides stercoralis</li>
+                    <li>Trichostrongylus sp.</li>
+                    <li>Trichuris trichiura</li>
+                    <li>Enterobius Vermicularis,Mansonella sp</li>
+                    <li>Larval Nematode (baby roundworm)</li>
+                </ol>
+            </div>
+    
+            <!-- Liver Flukes -->
+            <div class="col-md-6 order-3 order-md-1">
+                <h3 class="category-header">4 Liver Flukes (trematoda)</h3>
+                <ol class="parasite-list">
+                    <li>Schistosoma sp.</li>
+                    <li>Fasciola / Fasciolopsis</li>
+                    <li>Paragonimus westermani</li>
+                    <li>Clonorchis / Heterophyes / Metagonimus</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-2 my-lg-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="parasitephotos.png" alt="Parasite Photos" class="img-fluid mb-2">
+                <p class="image-caption">Shared with permission from 2 patients: Microscope photos used to identify 3 parasites in these 2 patients.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <p class="section-title-desc">
+            Fungal infections can have symptoms similar to parasite infection symptoms. So, this test also checks for fungi that may be pathogenic.
+        </p>
+    
+        <h3 class="category-header">5 Fungi/Yeast Strains</h3>
+        <ol class="parasite-list">
+            <li>Candida sp.</li>
+            <li>Cryptococcus sp.</li>
+            <li>Geotrichum sp.</li>
+            <li>Kloeckeri sp.</li>
+            <li>Hyphae</li>
+        </ol>
+    </div>
+
+    <div class="container mt-2 mt-lg-5">
+        <p class="section-title-desc">
+            We also check your stool for these 11 health markers. These markers are additional signs of digestive distress, parasite infection, insufficient probiotics or low enzymes.
+        </p>
+    
+        <h3 class="category-header">11 Health Markers</h3>
+        <ol class="parasite-list">
+            <li>Epithelial (squamous) cells</li>
+            <li>Epithelial columnar cells</li>
+            <li>Probiotic bacteria</li>
+            <li>Undigested tissue</li>
+            <li>White blood cells</li>
+            <li>Red blood cells</li>
+            <li>Fatty acid crystals</li>
+            <li>Starch granules</li>
+            <li>Pollen</li>
+            <li>Mucus</li>
+        </ol>
+    </div>
+
+
+    <div class="contact-info mt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="issues-css text-center">
+            Any issues found are quantified on a scale of 1 to 4. 1 is the mildest infection, 4 is the most severe infection.
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <p class="questions-css">Questions? Call or text (303)-699-9474</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container my-1 my-lg-3">
+        <div class="row">
+            <div class="section-title col text-center">
+                <h2>How Our Test Kits Work</h2>
+            </div>
+        </div>
+    
+        <div class="row mt-3 mt-lg-4">
+            <!-- First Image and Description -->
+            <div class="col-md-6 d-flex flex-column align-items-center text-left">
+                <img src="testerkit.png" alt="First Image Description" class="img-fluid equal-height-img">
+                <div class="kit-desc mt-3 col-12 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
+                    <p>Do you see the top of the vial? The top has a small scooper attached to it. You scoop the top part of your poop, and put it in the vial.</p>
+                    <p>It's very hygienic, and you won't have to touch any stool. In fact to make it even more hygienic, we include 4 stool sample collection bags.</p>
+                </div>
+            </div>
+    
+            <!-- Second Image and Description -->
+            <div class="col-md-6 mt-2 mt-md-0 d-flex flex-column align-items-center text-left">
+                <img src="bagstesting.png" alt="Second Image Description" class="img-fluid equal-height-img">
+                <div class="kit-desc mt-3 col-12 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
+                    <p>These bags are biodegradable, and you can flush them down the toilet after you've collected your samples. Again, as hygienic as possible, and easy to use!</p>
+                    <p>You'll put 2 days of stool samples in each vial. Since there are 2 vials, that means you'll have 4 days of samples total...making sure you'll catch even rare, cyclical parasites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contact-info d-flex flex-column justify-content-center bg-section">
+        <div class="col">
+            <div class="find-rare-parasites-title">How Can Our Parasite Test Kit Even Find Rare Parasites</div>
+        </div>
+    </div>
+    
+
+    <div class="container mt-3">
+        <!-- Content for Medium and Larger Screens -->
+        <div class="d-none d-md-block kit-desc">
+            <p>
+                When evaluating the parasite testing kits, here is the most important thing...Will the test miss any parasites you might have? With today's global food trade and immigration, parasites from any country can be caught in the USA. So you need a test kit that will look for even the uncommon, foreign parasites. Our research found that most parasite testing kits looked for just 3 to 6 USA parasites. But just our parasite stool test can find up to 31 parasites...from every continent. You're probably curious how they can find more parasites than other parasite test...well I'll tell you.
+            </p>
+        </div>
+
+        <!-- Content for Mobile Screens -->
+        <div class="d-block d-md-none kit-desc">
+            <p>When evaluating the parasite testing kits, here is the most important thing...Will the test miss any parasites you might have?</p>
+            <p>With today's global food trade and immigration, parasites from any country can be caught in the USA. So you need a test kit that will look for even the uncommon, foreign parasites.</p>
+            <p>Our research found that most parasite testing kits looked for just 3 to 6 USA parasites. But just our parasite stool test can find up to 31 parasites...from every continent.</p>
+            <p>You're probably curious how they can find more parasites than other parasite test...well I'll tell you.</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h2 class="category-header">How can the Precise Parasite Home Test Kit™ find 25 to 28 more parasites?</h2>
+            </div>
+        </div>
+    
+        <div class="row mt-3">
+            <div class="col">
+                <p class="kit-desc">The answer comes down to 1 man - world renowned Parasitologist Dr. Omar M. Amin. He created the most accurate parasite laboratory known to man. And Dr. Amin's lab is where parasites from the Precise Parasite Home Test Kit™ are diagnosed. The stool test Dr. Amin created is unique in 3 ways:</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <!-- Section for Medium and Larger Screens -->
+        <div class="d-none d-md-block">
+            <ol class="list-css">
+                <li>
+                    <h3 class="list-css">Experienced PhD parasite researchers won’t miss your parasites:</h3>
+                    <p class="list-css-desc">The laboratory's team of PhD-level parasite researchers possesses extensive experience in conducting parasite research worldwide, with an average tenure of over 15 years as parasitologists. Their profound expertise ensures the detection of even the rarest parasite infections.</p>
+                </li>
+                <li>
+                    <h3 class="list-css">Parasite eggs 100x smaller than a human hair are visible with high contrast dyes</h3>
+                    <p class="list-css-desc">Parasites aren't always present in the stool sample. Sometimes, just their eggs are there. Using high contrast dyes, Dr. Amin's lab can find parasite eggs other labs will miss.</p>
+                </li>
+                <li>
+                    <h3 class="list-css">No signs of parasites are destroyed with carefully selected preservation fluids</h3>
+                    <p class="list-css-desc">When you take a stool sample, it should be preserved so that it kills the parasites. But, some cheap preservation fluids also destroy signs of the parasite infection. Dr. Amin's preservation formula makes sure all signs of parasite infection are perfectly preserved.</p>
+                </li>
+            </ol>
+        </div>
+    
+        <!-- Section for Mobile Screens -->
+        <div class="d-block d-md-none">
+            <ol class="list-css">
+                <li>
+                    <h3 class="list-css">Experienced PhD parasite researchers won’t miss your parasites:</h3>
+                </li>
+            </ol>
+            <div class="list-css-desc mb-4">The laboratory's team of PhD-level parasite researchers possesses extensive experience in conducting parasite research worldwide, with an average tenure of over 15 years as parasitologists. Their profound expertise ensures the detection of even the rarest parasite infections.</div>
+
+            <ol class="list-css" start="2">
+                <li>
+                    <h3 class="list-css">Parasite eggs 100x smaller than a human hair are visible with high contrast dyes</h3>
+                </li>
+            </ol>
+            <div class="list-css-desc mb-4">Parasites aren't always present in the stool sample. Sometimes, just their eggs are there. Using high contrast dyes, Dr. Amin's lab can find parasite eggs other labs will miss.</div>
+
+            <ol class="list-css" start="3">
+                <li>
+                    <h3 class="list-css">No signs of parasites are destroyed with carefully selected preservation fluids</h3>
+                </li>
+            </ol>
+            <div class="list-css-desc mb-4">When you take a stool sample, it should be preserved so that it kills the parasites. But, some cheap preservation fluids also destroy signs of the parasite infection. Dr. Amin's preservation formula makes sure all signs of parasite infection are perfectly preserved.</div>
+        </div>
+
+    </div>
+
+    <div class="contact-info mt-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="issues-css text-center">
+            These 3 factors mean the Precise Parasite Home Test Kit™ can find 31 parasites, when other parasite tests can only find 3 to 6 parasites.
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <p class="questions-css">Questions? Call or text (303)-699-9474</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 mt-lg-5">
+        <div class="row justify-content-between">
+            <!-- Column 1 -->
+            <div class="col-md-3 mb-3 text-center">
+                <img src="microscope.svg" alt="Icon 1" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
+                <h3 class="lab-css">Parasite Research Lab</h3>
+                <p class="lab-css-desc">Our research parasitologists will examine your stool sample. Other labs look for 3 to 5 common parasites. Our lab looks for 31 parasites - finding even rare parasites. We find more parasites because we have passionate parasitologist researchers looking at your samples. Our researchers take great care with every sample. We find what most labs miss!</p>
+            </div>
+    
+            <!-- Column 2 -->
+            <div class="col-md-3 mb-3 text-center">
+                <img src="scientist.png" alt="Icon 2" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
+                <h3 class="lab-css">Test Created by a Parasitologist</h3>
+                <p class="lab-css-desc">Dr. Omin Armin, publisher of over 250 parasite research papers, created this home parasite test kit. He designed this test to find the maximum number of parasites (31), pathogenic fungi (5), and to find (11) other signs of digestive health problems.</p>
+            </div>
+    
+            <!-- Column 3 -->
+            <div class="col-md-3 mb-3 text-center">
+                <img src="shield.svg" alt="Icon 3" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
+                <h3 class="lab-css">Your Data is Secure</h3>
+                <p class="lab-css-desc">We strictly adhere to HIPAA compliance, ensuring the confidentiality of your test results and email correspondence. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Reviews Section -->
+    <div class="container mt-2 mt-lg-4" id="reviews-section">
+        <div class="row">
+            <div class="col">
+                <h2 class="section-title">Product Reviews</h2>
+                <!-- Stars (Non-clickable) and Reviews Count -->
+                <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                    <img src="star.svg" alt="Star 1" class="star">
+                    <img src="star.svg" alt="Star 2" class="star">
+                    <img src="star.svg" alt="Star 3" class="star">
+                    <img src="star.svg" alt="Star 4" class="star">
+                    <img src="star.svg" alt="Star 5" class="star">
+                    <span class="ms-2 reviews-link">21 Reviews</span>
+                </div>
+                <p class="lab-css-desc">21 out of 21 would recommend to a friend</p>
+            </div>
+        </div>
+        <!-- Additional review content goes here -->
+    </div>
+
+    <div class="container mt-3" id="reviews">
+        <div class="row justify-content-between">
+        <!-- First Review -->
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Daisy G</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">09/21/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">The test was easy to complete and mail. After my results were done the guy who I spoke with was very helpful in explaining my results and how to proceed.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Bonnie R</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">08/30/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Customer care is nothing short of amazing. If you're in doubt on this purchase, don't be. I waited far too long and was relieved after three years of being really sick, I have a starting point. I highly recommend for anyone suffering from unusual symptoms that PCP or even ID can't figure out. These guys did the job right.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Alethea J</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">07/17/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">The test was very thorough and the customer service was superb! Evan responded to all of my inquiries in a timely manner and took the time to explain all of my results to me. I did a lot of research on finding the best home test kit and I know this one was on the pricier side but it was worth it. No other testing kits were as thorough and educational as this one. Not even a doctor takes the time to be this thorough! It was worth every dollar spent to get peace of mind about my health. Knowing about parasites, candida, and other gut health challenges is a major step in self-care.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Kimberley L</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">02/17/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I was extremely pleased with the quick turnaround time and the comprehensive, detailed results I received, but what impressed me most was Evan’s attentiveness and personal replies to my emails. It's rare these days to be able to actually speak to, or to be able to communicate with, a “real person” instead of an automated answering service, and the personal touch is so greatly appreciated! Thank you, Evan, for being available, communicative, friendly, and especially, so knowledgeable, about your work!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Arabella A</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">01/20/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Overall simplified process in ordering kit, collecting sample, and returning the samples. The team was available to respond to questions, and the follow up to review the report was super helpful. I feel like I have an understanding what next steps to take, and how I can be mindful in my approach to better gut health.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Chad H</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">01/14/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">5 star rating and I would highly recommend you guys! A very easy way to test from home! Ezpz!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Mary A</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">07/20/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I would rate this company five stars and I would definitely recommend them to my friends. The test was very easy to do and very hygienic. When I called to have the results explained Evan was very helpful and informative. This is a great service and a great company!!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Wanda L</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">07/19/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Yes I would recommend. Fast service. Answered all my phone calls and emails quickly. Is a very caring person.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Angela G</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">06/30/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan was very helpful, informative and responsive from the beginning. He was directly available via phone to explain my test results and went above and beyond in answering all of my questions. I really appreciate the time and effort taken to go over my options, once I received my results. I would highly recommend to anyone looking for an easy to follow, thorough, knowledgeable and professional experience, as well as solutions offered for something as important as your health.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Holly S</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">06/28/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan gave very personalized service to help me understand my test results. It’s obvious he has a passion for helping others become healthier versions of themselves.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Crystal B</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">09/21/2023</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan was very knowledgeable and helpful! We discussed everything I could think of I know I can reach out with any future questions, which is great!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Amy M</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">05/31/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan was so knowledgeable and helpful with understanding what my results meant and even recommended somethings that could help improve my health. I highly recommend.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Tamara W</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">05/24/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan went above and beyond answering all my questions. I would highly recommend!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Kristin W</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">05/17/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I love how easy it was working with the lab and getting my results. I got my results back fast and it was very thorough! included details of everything along with photos. The follow up with Evan was great too. Fast communication by phone and email anytime I had any questions. I was recommended by a friend for it being a trusted lab and in my experience I can say the same. I will be a returning customer for sure !</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">N B</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">03/10/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I've had many medical problems and your test brought me some insight on what is going on in my body. Thank you so very much! Great service too.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">E D</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">02/20/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Evan is extremely professional and took the time to ask me about my symptoms. I felt very comfortable talking to him about some embarrassing symptoms. I got my test results back promptly and he took the time to go over them in detail with recommendations. I would highly recommend to anyone experiencing symptoms that may be related to a parasite to contact Evan at Parasites.org Thank you, E.D.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Michele M</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">02/03/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I found parasites.org after searching online for a parasite kit that tested for more than just Candida. I had done a holistic parasite cleanse prior to testing and decided after the cleanse that I needed to check for parasites since my symptoms didn't completely go away. I was wavering between thinking I had leaky gut or recurrent parasites, and I wanted more insight into what was actually in my gut. I wish now I would have tested first, then done the cleanse so I would have had a baseline to go off of.<br><br>
+                    Pros: The parasite kit arrived quickly after ordering it online and was easy to use. It came with clear instructions along with tips on how to get the best sample(s). Evan followed up, as promised, with a personal phone call to go over the test results and gave me some suggestions on what I could do to help my symptoms. Evan provided excellent customer service, I did not feel hurried on our phone call, and he offered a discount on further purchases.<br><br>
+                    Cons: I am accustomed to getting email updates on online purchases. I was disappointed that I did not get an email confirmation after the purchase, when my sample was received, or to notify that my sample was in the process of being assessed. I was nervous that the test kit was actually fake and that my sample was not received or being tested.<br>
+                    Overall, I was happy I invested in this test kit and would recommend it to anyone wanting a starting point for bothersome symptoms or periodically wanting to test/re-test. Evan has a passion for helping others understand parasites and his company is a great resource!</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Tara C</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">01/19/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">I would rate the at home parasite testing company Parasites.org, a 6 out of 6 stars. I would go higher if I could and would definitely recommend their services to friends. As someone who does not like big corporations or even going to the Dr., I was shocked to experience easy, fast, thorough, friendly, and personalized service. Ordering the kit, providing a sample, and sending it back was very simple and discreet and was not complicating or time consuming like I had expected. Every question I emailed was quickly responded to and I received the results with a couple of days.<br><br>
+                    The results were explained in detail as well as personalized plan informing me of the best course of action to take that would help to remedy my situation. The plan was way more than I expected to get from a lab giving you test results because most places just tell you to go to the Dr and that's the extent of their advice. Parasites.org sets the bar on how a professional health service should conduct their business.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Sue S</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">01/06/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Thoughts on the experience: It was easy to do. I eliminated dark foods for one week to make it easier to identify the organisms as the directions suggested. Then I did four samples over four days during the full moon when parasites are said to reproduce and be more active. The directions and supplies were sufficient for the task. I had the results one week later! Evan thoroughly explained the findings and answered all my questions. And, because Evan provides this service I was able to share my results with my doctor and have a stool bacterial culture test ordered. I was also able to contact a doctor in my area with 40 years working with Immunology-Infectious Diseases and shared the results with him. I will hear from him next week once he has the results from the bacteria test. Thank you, Evan, for seeing a need and filling it! I greatly appreciate you, your knowledge and your commitment to helping people become healthy! Sincerely, Sue S.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Kim W</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">01/04/2022</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">Great personal touch and care. I appreciate customer service answering questions about my test.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-5 my-2 my-lg-4">
+            <div class="review-card">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="mb-1 review-name">Andrea S</p>
+                        <div class="stars-and-reviews mb-2 d-flex align-items-center">
+                            <!-- Star Images Here -->
+                            <img src="star.svg" alt="Star 1" class="star">
+                            <img src="star.svg" alt="Star 2" class="star">
+                            <img src="star.svg" alt="Star 3" class="star">
+                            <img src="star.svg" alt="Star 4" class="star">
+                            <img src="star.svg" alt="Star 5" class="star">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <p class="verified-css">
+                            <img src="verified.svg" alt="Verified" class="verified-icon me-1">
+                            Verified Customer
+                            <br>
+                           <span class="date-css">12/31/2021</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="mt-2 actual-review-css">The kit arrived very quickly with easy instructions and a return label that was easy to return shipping. My results came in the amount of time the website had informed me and I received a phone call from Evan with my results along with an email of my results to show my doctor. Evan was very helpful and answered all my questions and was very informative about my test results. He has answered all my emails and questions I have about my test.<br><br>
+                    I'm very impressed with this service and would recommend this website to anyone trying to get testing done. I would rate this a 5 Star service.</p>
+                <p class="thumbs-up mt-1">
+                    <img src="thumbsup.svg" alt="Thumbs Up" class="me-2 thumbsup">
+                    <span class="recommend-friend-css">Would recommend to a friend</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="container mt-2 mt-lg-5">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="questions-css">Questions? Call or text (303)-699-9474</p>
+                </div>
+            </div>
+        </div>
+
+        
+    
+        </div>
+    </div>
+    
+    <footer class="mt-2 mt-lg-5 footer-bg d-flex justify-content-center align-items-center">
+        <img src="parasitewhitelogo.png" alt="Logo" class="img-fluid footer-logo">
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
