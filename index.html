@@ -41,6 +41,11 @@
             max-width: 800px;
         }
 
+        .navbar-logo {
+            max-height: 75px; /* Adjust this value to match the size on the product page */
+        }
+
+
         /* .ultrawide-logo {
             max-height: 100px;
         } */
@@ -252,7 +257,7 @@
         .kit-desc {
             color: #005DA4;
             font-family: 'Lora', serif;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-style: normal;
             font-weight: 500;
         }
@@ -275,7 +280,7 @@
         .list-css {
             color: #005DA4;
             font-family: 'Montserrat', sans-serif;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
@@ -286,7 +291,7 @@
         .list-css-desc {
             color: #005DA4;
             font-family: 'Lora', serif;
-            font-size: 0.8rem;
+            font-size: 1rem;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -469,36 +474,36 @@
             }
 
             .section-title {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 letter-spacing: 0.3px;
             }
 
             .section-title-desc {
-                font-size: 0.8rem;
+                font-size: 1rem;
                 letter-spacing: 0.8px;
             }
 
             .category-header {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 letter-spacing: 1.8px;
             }
 
             .parasite-list {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 letter-spacing: 0.5px;
             }
 
             .image-caption {
-                font-size: 0.7rem;
+                font-size: 0.8rem;
             }
 
             .issues-css {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 letter-spacing: 0.1px;
             }
 
             .questions-css {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 letter-spacing: 0.1px;
             }
 
@@ -524,10 +529,10 @@
             }
 
             .list-css {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             .list-css-desc {
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
 
             .lab-css {
@@ -602,15 +607,24 @@
 </head>
 <body>
 
-    <nav class="navbar pt-3">
+    <!-- <nav class="navbar pt-3">
         <div class="container">
-            <div class="col-7 col-md-5 col-lg-4"> <!-- More space on small screens, adjust as needed -->
+            <div class="col-7 col-md-5 col-lg-4">
                 <a class="navbar-brand" href="https://www.parasites.org/">
                     <img src="parasiteLogo.png" alt="Logo" class="img-fluid ultrawide-logo">
                 </a>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar pt-0">
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="https://www.parasites.org/">
+                <img src="parasiteLogo.png" alt="Logo" class="img-fluid navbar-logo">
+            </a>
+        </div>
     </nav>
+    
 
     <div class="container mt-2 product-info">
         <div class="row">
@@ -631,6 +645,7 @@
             <!-- Content Column for Mobile and Desktop -->
             <div class="col-lg-6">
                 <h1 class="mb-4 h1css">Home Stool Test Tells You If You Have Parasites</h1>
+                <a hred = "#reviews">
                 <div class="row">
                     <div class="col">
                         <h2 class="custom-lead mb-2">At Home Gut Parasites Test</h2> <!-- Added mb-2 class for margin-bottom -->
@@ -647,6 +662,7 @@
                                                                              
                     </div>
                 </div>
+            </a>
 
     
                 <!-- Image for Mobile View -->
@@ -685,7 +701,11 @@
 
     <div class="container mt-4 mt-lg-5">
         <h2 class="section-title">What Parasites Can This Test Find?</h2>
-        <p class="section-title-desc">The Precise Parasites Home Test Kit finds 31 parasites, 5 fungi, 11 markers of digestive health.</p>
+        <div class="row">
+            <div class="col-lg-8"> <!-- Adjust the column size on large screens and center it -->
+                <p class="section-title-desc">The Precise Parasites Home Test Kit finds 31 parasites, 5 fungi, 11 markers of digestive health.</p>
+            </div>
+        </div>
         
         <div class="row">
             <!-- Tapeworms -->
@@ -737,7 +757,7 @@
     
             <!-- Liver Flukes -->
             <div class="col-md-6 order-3 order-md-1">
-                <h3 class="category-header">4 Liver Flukes (trematoda)</h3>
+                <h3 class="category-header">4 Flukes (trematoda)</h3>
                 <ol class="parasite-list">
                     <li>Schistosoma sp.</li>
                     <li>Fasciola / Fasciolopsis</li>
@@ -752,13 +772,14 @@
         <div class="row">
             <div class="col-12 text-center">
                 <img src="parasitephotos.png" alt="Parasite Photos" class="img-fluid mb-2">
-                <p class="image-caption">Shared with permission from 2 patients: Microscope photos used to identify 3 parasites in these 2 patients.</p>
-            </div>
+                <div class="col-lg-4 mx-auto text-center">
+                    <p class="image-caption">Shared with permission from 2 patients: Microscope photos used to identify 3 parasites in these 2 patients.</p>
+                </div>
         </div>
     </div>
     
     <div class="container">
-        <p class="section-title-desc">
+        <p class="section-title-desc col-lg-10">
             Fungal infections can have symptoms similar to parasite infection symptoms. So, this test also checks for fungi that may be pathogenic.
         </p>
     
@@ -773,7 +794,7 @@
     </div>
 
     <div class="container mt-2 mt-lg-5">
-        <p class="section-title-desc">
+        <p class="section-title-desc col-lg-10">
             We also check your stool for these 11 health markers. These markers are additional signs of digestive distress, parasite infection, insufficient probiotics or low enzymes.
         </p>
     
@@ -795,7 +816,7 @@
 
 
     <div class="contact-info mt-5 d-flex flex-column justify-content-center align-items-center">
-        <div class="issues-css text-center">
+        <div class="issues-css text-center col-lg-10">
             Any issues found are quantified on a scale of 1 to 4. 1 is the mildest infection, 4 is the most severe infection.
         </div>
     </div>
@@ -841,7 +862,7 @@
     
     <div class="contact-info d-flex flex-column justify-content-center bg-section">
         <div class="col">
-            <div class="find-rare-parasites-title">How Can Our Parasite Test Kit Even Find Rare Parasites</div>
+            <div class="find-rare-parasites-title">How Can Our Parasite Test Kit Even Find Rare Parasites?</div>
         </div>
     </div>
     
