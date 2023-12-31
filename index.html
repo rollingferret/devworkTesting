@@ -428,14 +428,12 @@
 
         /* Extra small devices (phones, less than 576px) */
         @media (max-width: 575.98px) { 
-            .h1css {
-                font-size: 1.1rem; /* Smaller font size for h1 */
-            }
+
             .custom-lead {
-                font-size: 1rem; /* Smaller font size for custom lead */
+                font-size: 1.1rem; /* Smaller font size for custom lead */
             }
             .description {
-                font-size: 1rem; /* Smaller font size for description */
+                font-size: 1.05rem; /* Smaller font size for description */
             }
             .custom-text-style {
                 font-size: 0.9rem; /* Adjust as needed */
@@ -454,7 +452,7 @@
                 font-size: 1.25rem;
             }
             .contact-text {
-                font-size: 0.8rem;
+                font-size: 1rem;
                 letter-spacing: 0.5px;
             }
             .container {
@@ -466,7 +464,7 @@
                 height: 17px; /* Smaller height for star */
             }
             .reviews-link {
-                font-size: 0.75rem; /* Smaller font size for reviews link */
+                font-size: 1rem; /* Smaller font size for reviews link */
             }
             .inner-product-image {
                 width: 90%;
@@ -484,8 +482,9 @@
             }
 
             .category-header {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 letter-spacing: 1.8px;
+                text-align: left;
             }
 
             .parasite-list {
@@ -498,7 +497,7 @@
             }
 
             .issues-css {
-                font-size: 0.9rem;
+                font-size: 1rem;
                 letter-spacing: 0.1px;
             }
 
@@ -543,7 +542,7 @@
 
 
             .lab-css-desc {
-                font-size: 0.8rem;
+                font-size: 1rem;
                 font-style: normal;
                 letter-spacing: 0.5px;
                 text-align: left;
@@ -588,6 +587,22 @@
                 justify-content: center;
                 text-align: center;
             }
+
+            .parasite-list {
+                font-size: 1.05rem;
+            }
+
+            .section-title-desc {
+                font-size: 1.15rem;
+            }
+
+            .questions-css {
+                font-size: 1.1rem;
+            }
+
+            .h1css {
+                font-size: 1.3rem;
+            }
         }
 
         /* LG screens and above (992px and up) */
@@ -626,7 +641,7 @@
     </nav>
     
 
-    <div class="container mt-2 product-info">
+    <div class="container mt-0 mt-lg-2 product-info">
         <div class="row">
             <!-- Image Column for Desktop View -->
 
@@ -644,7 +659,7 @@
             
             <!-- Content Column for Mobile and Desktop -->
             <div class="col-lg-6">
-                <h1 class="mb-4 h1css">Home Stool Test Tells You If You Have Parasites</h1>
+                <h1 class="mb-2 mb-lg-4 h1css">Home Stool Test Tells You If You Have Parasites</h1>
                 <div class="row">
                     <div class="col">
                         <h2 class="custom-lead mb-2">At Home Gut Parasites Test</h2> <!-- This remains unlinked -->
@@ -661,16 +676,19 @@
 
     
                 <!-- Image for Mobile View -->
-                <div class="d-lg-none mb-5 d-flex justify-content-center inner-product-image">
+                <div class="d-lg-none mb-4 mb-lg-5 d-flex justify-content-center inner-product-image">
                     <img src="parasiteKit.png" alt="Product Image" class="img-fluid">
                 </div>
-                
-                <p class="description mb-5">This at-home test checks for 31 parasites, 5 fungi (candida) and 11 other markers of digestive health.</p>
+                <div class="row justify-content-center">
+                    <div class="col-lg col-10">
+                        <p class="description mb-4 mb-lg-5">This at-home test checks for 31 parasites, 5 fungi (candida) and 11 other markers of digestive health.</p>
+                    </div>
+                </div>
                 <div class="d-flex align-items-center mb-2">
                     <img src="microscope.svg" alt="Icon" width="40" height="40" class="me-2">
                     <span class="custom-text-style ms-3">Finds 31 parasites + candida</span>
                 </div>
-                <div class="d-flex align-items-center mb-5">
+                <div class="d-flex align-items-center mb-4 mb-lg-5">
                     <img src="testtubes.svg" alt="Icon" width="40" height="40" class="me-2">
                     <span class="custom-text-style ms-3">At-home stool sample collection</span>
                 </div>
@@ -687,7 +705,7 @@
         </div>
     </div>
 
-    <div class="contact-info mt-5 d-flex flex-column justify-content-center">
+    <div class="contact-info mt-4 mt-lg-5 d-flex flex-column justify-content-center">
         <div class="questions-text mb-2">Questions?</div>
         <div class="contact-text">
             Call or text us at <a href="tel:+13036999474">(303)-699-9474</a>
@@ -697,7 +715,7 @@
     <div class="container mt-4 mt-lg-5">
         <h2 class="section-title">What Parasites Can This Test Find?</h2>
         <div class="row">
-            <div class="col-lg-8"> <!-- Adjust the column size on large screens and center it -->
+            <div class="col-10 col-lg-8"> <!-- Adjust the column size on large screens and center it -->
                 <p class="section-title-desc">The Precise Parasites Home Test Kit finds 31 parasites, 5 fungi, 11 markers of digestive health.</p>
             </div>
         </div>
@@ -811,7 +829,7 @@
     </div>
 
 
-    <div class="contact-info mt-5 d-flex flex-column justify-content-center align-items-center">
+    <div class="contact-info mt-2 mt-lg-5 d-flex flex-column justify-content-center align-items-center">
         <div class="issues-css text-center col-lg-5">
             Any issues found are quantified on a scale of 1 to 4. 1 is the mildest infection, 4 is the most severe infection.
         </div>
@@ -839,7 +857,7 @@
             <!-- First Image and Description -->
             <div class="col-md-6 d-flex flex-column align-items-center text-left">
                 <img src="testerkit.png" alt="First Image Description" class="img-fluid equal-height-img">
-                <div class="kit-desc mt-3 col-12 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
+                <div class="kit-desc mt-3 col-11 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
                     <p>Do you see the top of the vial? The top has a small scooper attached to it. You scoop the top part of your poop, and put it in the vial.</p>
                     <p>It's very hygienic, and you won't have to touch any stool. In fact to make it even more hygienic, we include 4 stool sample collection bags.</p>
                 </div>
@@ -848,7 +866,7 @@
             <!-- Second Image and Description -->
             <div class="col-md-6 mt-2 mt-md-0 d-flex flex-column align-items-center text-left">
                 <img src="bagstesting.png" alt="Second Image Description" class="img-fluid equal-height-img">
-                <div class="kit-desc mt-3 col-12 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
+                <div class="kit-desc mt-3 col-11 col-lg-10 mx-auto"> <!-- Adjust the width of the text container -->
                     <p>These bags are biodegradable, and you can flush them down the toilet after you've collected your samples. Again, as hygienic as possible, and easy to use!</p>
                     <p>You'll put 2 days of stool samples in each vial. Since there are 2 vials, that means you'll have 4 days of samples total...making sure you'll catch even rare, cyclical parasites.</p>
                 </div>
@@ -858,7 +876,7 @@
     
     <div class="contact-info d-flex flex-column justify-content-center bg-section">
         <div class="col">
-            <div class="find-rare-parasites-title">How Can Our Parasite Test Kit Even Find Rare Parasites?</div>
+            <div class="find-rare-parasites-title text-center">How Can Our Parasite Test Kit Even Find Rare Parasites?</div>
         </div>
     </div>
     
@@ -880,15 +898,15 @@
     </div>
 
 
-    <div class="container mt-5 d-flex flex-column justify-content-center">
+    <div class="container mt-3 mt-lg-5 d-flex flex-column justify-content-center">
         <div class="row">
-            <div class="col text-center">
+            <div class="col-11 col-lg text-center">
                 <h2 class="category-header">How can the Precise Parasite Home Test Kit™ find 25 to 28 more parasites?</h2>
             </div>
         </div>
     
-        <div class="row mt-4">
-            <div class="col-lg-6 mx-auto">
+        <div class="row mt-2 mt-lg-4">
+            <div class="col-11 col-lg-6 mx-auto">
                 <p class="kit-desc">The answer comes down to 1 man - world renowned Parasitologist Dr. Omar M. Amin. He created the most accurate parasite laboratory known to man. And Dr. Amin's lab is where parasites from the Precise Parasite Home Test Kit™ are diagnosed. The stool test Dr. Amin created is unique in 3 ways:</p>
             </div>
         </div>
@@ -920,6 +938,7 @@
         </div>
 
         <!-- Section for Mobile Screens -->
+        <div class="container">
         <div class="d-block d-md-none">
             <ol class="list-css">
                 <li>
@@ -942,6 +961,7 @@
             </ol>
             <div class="list-css-desc mb-4">When you take a stool sample, it should be preserved so that it kills the parasites. But, some cheap preservation fluids also destroy signs of the parasite infection. Dr. Amin's preservation formula makes sure all signs of parasite infection are perfectly preserved.</div>
         </div>
+    </div>
 
     </div>
 
@@ -971,21 +991,21 @@
     <div class="container mt-3 mt-lg-5">
         <div class="row justify-content-between">
             <!-- Column 1 -->
-            <div class="col-md-4 mb-3 text-center p-md-3">
+            <div class="col-md-4 mb-3 text-center p-4 p-md-3">
                 <img src="microscope.svg" alt="Icon 1" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
                 <h3 class="lab-css">Parasite Research Lab</h3>
                 <p class="lab-css-desc">Our research parasitologists will examine your stool sample. Other labs look for 3 to 5 common parasites. Our lab looks for 31 parasites - finding even rare parasites. We find more parasites because we have passionate parasitologist researchers looking at your samples. Our researchers take great care with every sample. We find what most labs miss!</p>
             </div>
     
             <!-- Column 2 -->
-            <div class="col-md-4 mb-3 text-center p-md-3">
+            <div class="col-md-4 mb-3 text-center p-4 p-md-3">
                 <img src="scientist.png" alt="Icon 2" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
                 <h3 class="lab-css">Test Created by a Parasitologist</h3>
                 <p class="lab-css-desc">Dr. Omin Armin, publisher of over 250 parasite research papers, created this home parasite test kit. He designed this test to find the maximum number of parasites (31), pathogenic fungi (5), and to find (11) other signs of digestive health problems.</p>
             </div>
     
             <!-- Column 3 -->
-            <div class="col-md-4 mb-3 text-center p-md-3">
+            <div class="col-md-4 mb-3 text-center p-4 p-md-3">
                 <img src="shield.svg" alt="Icon 3" class="img-fluid mb-3 mb-lg-4" style="height: 80px; object-fit: contain;">
                 <h3 class="lab-css">Your Data is Secure</h3>
                 <p class="lab-css-desc">We strictly adhere to HIPAA compliance, ensuring the confidentiality of your test results and email correspondence. </p>
@@ -994,7 +1014,7 @@
     </div>
 
     <!-- Product Reviews Section -->
-    <div class="container mt-2 mt-lg-4" id="reviews-section">
+    <div class="container mt-3 mt-lg-4" id="reviews-section">
         <div class="row">
             <div class="col">
                 <h2 class="section-title">Product Reviews</h2>
