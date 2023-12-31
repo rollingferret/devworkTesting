@@ -579,6 +579,13 @@
 
         }
 
+        /* Small to Medium screens (576px to 991.98px) */
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            .questions-css {
+                font-size: 1.1rem;
+            }
+        }
+
         /* XS to MD screens (up to 991.98px) */
         @media (max-width: 991.98px) {
             .custom-buy-button {
@@ -598,10 +605,6 @@
 
             .section-title-desc {
                 font-size: 1.15rem;
-            }
-
-            .questions-css {
-                font-size: 1.1rem;
             }
 
             .h1css {
@@ -886,15 +889,18 @@
     
     <div class="container mt-3">
         <!-- Content for Medium and Larger Screens -->
-        <div class="col-lg-6 col-11 mx-auto kit-desc">
+        <div class="d-none d-md-block col-lg-6 col-11 mx-auto kit-desc">
             <p>
-                When evaluating the parasite testing kits, here is the most important thing...Will the test miss any parasites you might have? With today's global food trade and immigration, parasites from any country can be caught in the USA. So you need a test kit that will look for even the uncommon, foreign parasites. Our research found that most parasite testing kits looked for just 3 to 6 USA parasites. But just our parasite stool test can find up to 31 parasites...from every continent. You're probably curious how they can find more parasites than other parasite test...well I'll tell you.
+                When evaluating the parasite testing kits, here is the most important thing... <b>Will the test miss any parasites you might have?</b> With today's global food trade and immigration, parasites from any country can be caught in the USA. So you need a test kit that will look for even the uncommon, foreign parasites. Our research found that most parasite testing kits looked for just 3 to 6 USA parasites. But just our parasite stool test can find up to 31 parasites...from every continent.
+            </p>
+            <p>
+                You're probably curious how they can find more parasites than other parasite test...well I'll tell you.
             </p>
         </div>
     
         <!-- Content for Mobile Screens -->
-        <div class="col-lg-6 col-11 mx-auto kit-desc">
-            <p>When evaluating the parasite testing kits, here is the most important thing...Will the test miss any parasites you might have?</p>
+        <div class="d-block d-md-none col-lg-6 col-11 mx-auto kit-desc">
+            <p>When evaluating the parasite testing kits, here is the most important thing... <b>Will the test miss any parasites you might have?</b></p>
             <p>With today's global food trade and immigration, parasites from any country can be caught in the USA. So you need a test kit that will look for even the uncommon, foreign parasites.</p>
             <p>Our research found that most parasite testing kits looked for just 3 to 6 USA parasites. But just our parasite stool test can find up to 31 parasites...from every continent.</p>
             <p>You're probably curious how they can find more parasites than other parasite test...well I'll tell you.</p>
