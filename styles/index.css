@@ -1,0 +1,398 @@
+.h1css {
+    color: #3f92d1; /* dark blue color */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font, with sans-serif as a fallback */
+    font-size: 2.5rem; /* 3.5rem replicates figma but feels big */
+    font-style: normal; /* Normal font style */
+    font-weight: 700; /* Font weight 700 (bold) */
+    line-height: normal; /* Normal line height */
+    letter-spacing: 0.4px; /* Letter spacing 0.4 pixels */
+}
+
+.image-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.navbar-logo {
+    max-height: 75px; /* Adjust this value to match the size on the product page */
+}
+
+
+/* .ultrawide-logo {
+    max-height: 100px;
+} */
+
+.custom-lead {
+    color: #525354;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.star {
+    width: 30px; /* Set the width and height of the stars as needed */
+    height: 30px;
+    margin: 0 0; /* Adjust the margin between stars */
+}
+
+.reviews-link {
+    margin-top: 1px;
+    color: #153E79;
+    font-family: 'Lora', serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.description {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.custom-text-style {
+    color: #525354;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.price {
+    color: #FF0017;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.6px;
+}
+
+.shipping-info {
+    color: #FF0017;
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.price-container {
+
+}
+
+.custom-buy-button {
+    background-color: #43bf63;
+    color: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    width: 100%;
+    border: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact-info {
+    width: 100%;
+    height: 100px;
+    background: #3f92d1;
+    text-align: center;
+    padding: 3rem;
+}
+
+.questions-text {
+    color: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.contact-text {
+    color: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.button-container {
+    justify-content: center; 
+}
+
+.section-title {
+    color: #3f92d1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.section-title-desc {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.category-header {
+    color: #409fe3;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 1.2rem;
+    letter-spacing: 1.8px;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.parasite-list {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0.72px;
+}
+
+.image-caption {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+li {
+    margin-bottom: 0.1rem;
+}
+
+.issues-css {
+    color: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.questions-css {
+    color: #3f92d1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.questions-css a {
+    color: inherit; /* Inherits the color from the parent element */
+    text-decoration: none; /* Optional: removes underline from links */
+}
+
+.questions-css a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.equal-height-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.kit-desc {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.find-rare-parasites-title {
+    color: #3f92d1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.bg-section {
+    background-color: transparent;
+}
+
+.list-css {
+    color: #409fe3;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-align: left;
+}
+
+.list-css-desc {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.lab-css {
+    color: #3f92d1;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-align: left;
+}
+
+
+.lab-css-desc {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-align: left;
+}
+
+.review-name {
+    color: #3f92d1;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.verified-css {
+    color: #0094FF;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.date-css {
+    color: #153E79;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.actual-review-css {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.recommend-friend-css {
+    color: #0094FF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+
+.footer-bg {
+    background-color: #3f92d1; /* Adjust the color to match your design */
+    text-align: center;
+    padding: 1.25rem 0; /* Adjust padding as needed */
+}
+
+
+.verified-icon {
+    height: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.thumbs-up {
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    font-size: 1rem; /* Adjust font size as needed */
+}
+
+.thumbsup {
+    width: 1.25rem; /* Adjust width as needed */
+    height: 1.25rem; /* Adjust height as needed */
+    margin-right: 10px; /* Spacing between the icon and the text */
+}
+
+.footer-logo {
+    width: auto; /* Adjust as needed for larger screens */
+    height: 90%; /* Maintain aspect ratio */
+}
+
+.contact-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-text a:hover {
+    text-decoration: underline;
+}
+
+/* Define styles for breakpoints */
+.bg-xs { background-color: red; }
+.bg-sm { background-color: orange; }
+.bg-md { background-color: yellow; }
+.bg-lg { background-color: green; }
+.bg-xl { background-color: blue; }
+
+/* Custom styles for extending container width on ultra-wide screens */
+/* @media (min-width: 1920px) {
+    .container {
+        max-width: 70%;
+    }
+} */
+
+@media (min-width: 575.98px) { 
+    .contact-info {
+        padding: 4rem;
+    }
+}
