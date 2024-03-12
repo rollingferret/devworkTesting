@@ -1,0 +1,211 @@
+:root {
+    --mobile-text-color: #000000;
+    --mobile-font-family: sans-serif
+  }
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .header-bg {
+        background-image: linear-gradient(rgba(215, 233, 247), white);
+    }
+    .custom-lead {
+        color: var(--mobile-text-color);
+        font-size: 1.2rem; /* Smaller font size for custom lead */
+    }
+    .description {
+        line-height: 1.8rem;
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1.2rem; /* Smaller font size for description */
+    }
+    .custom-text-style {
+        font-size: 0.9rem; /* Adjust as needed */
+    }
+    .price {
+        font-size: 1.7rem; /* Smaller font size for price */
+    }
+    .shipping-info {
+        font-size: 1rem; /* Adjust as needed */
+    }
+    .custom-buy-button {
+        font-size: 1.6rem; /* Smaller font size for button */
+        padding: 1rem 1rem; /* Adjust padding as needed */
+    }
+    .questions-text {
+        font-size: 1.25rem;
+    }
+    .contact-text {
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+    .container {
+        padding-left: 15px; /* Adjust as needed */
+        padding-right: 15px; /* Adjust as needed */
+    }
+    .star {
+        width: 17px; /* Smaller width for star */
+        height: 17px; /* Smaller height for star */
+    }
+    .reviews-link {
+        color: var(--mobile-text-color);
+        font-size: 1rem; /* Smaller font size for reviews link */
+    }
+    .inner-product-image {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        letter-spacing: 0.3px;
+    }
+
+    .section-title-desc {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1rem;
+        letter-spacing: 0.8px;
+    }
+
+    .category-header {
+        font-size: 1.2rem;
+        letter-spacing: 1.8px;
+        text-align: left;
+    }
+
+    .parasite-list {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .image-caption {
+        font-size: 0.8rem;
+    }
+
+    .issues-css {
+        font-size: 1rem;
+        letter-spacing: 0.1px;
+    }
+
+    .questions-css {
+        font-size: 0.9rem;
+        letter-spacing: 0.1px;
+    }
+
+    .equal-height-img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .bg-section {
+        background-color: #3f92d1;
+    }
+
+    .find-rare-parasites-title {
+        color: white; /* Revert text color */
+        font-size: 1rem;
+        letter-spacing: 0.1px;
+        font-weight: 500;
+    }
+
+    .list-css {
+        font-size: 1.2rem;
+    }
+    .list-css-desc {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1.1rem;
+    }
+
+    .lab-css {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+
+    .lab-css-desc {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1.1rem;
+        font-style: normal;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    .review-name {
+        font-size: 1rem;
+    }
+
+    .verified-css {
+        font-size: 0.8rem;
+    }
+
+    .date-css {
+        font-size: 0.8rem;
+    }
+
+    .actual-review-css {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    .recommend-friend-css {
+        font-size: 1rem;
+    } 
+
+    .footer-logo {
+        width: 65%; /* Smaller width for mobile devices */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .kit-desc {
+        font-family: var(--mobile-font-family);
+        color: var(--mobile-text-color);
+        font-size: 1.1rem;
+    }
+
+    .title-text {
+        line-height: 3rem;
+        font-size: 2rem !important;
+    }
+}
+
+/* Small to Medium screens (576px to 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .questions-css {
+        font-size: 1.1rem;
+    }
+}
+
+/* XS to MD screens (up to 991.98px) */
+@media (max-width: 991.98px) {
+    .custom-buy-button {
+        width: 80%;
+    }
+
+    .price-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .parasite-list {
+        font-size: 1.05rem;
+    }
+
+    .section-title-desc {
+        font-size: 1.15rem;
+    }
+
+    .h1css {
+        font-size: 1.5rem;
+    }
+}

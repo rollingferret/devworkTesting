@@ -1,0 +1,12 @@
+
+/* LG screens and above (992px and up) */
+@media (min-width: 992px) {
+    .custom-buy-button {
+        width: 100%;
+    }
+
+    .product-info {
+        margin-bottom: 5rem;
+    }
+
+}
