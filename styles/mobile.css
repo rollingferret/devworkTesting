@@ -1,12 +1,14 @@
 :root {
     --mobile-text-color: #000000;
-    --mobile-font-family: sans-serif
+    --mobile-font-family: sans-serif;
+    --color-primary-dark: #1576bf;
   }
 
 /* font-family: 'Montserrat', sans-serif; */
 
+
 /* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) { 
+@media (max-width: 575.98px) {
     .header-bg {
         background-image: linear-gradient(rgba(215, 233, 247), white);
     }
@@ -15,7 +17,7 @@
         font-size: 1.2rem; /* Smaller font size for custom lead */
     }
     .description {
-        line-height: 1.8rem;
+        line-height: 2.4rem;
         font-family: var(--mobile-font-family);
         color: var(--mobile-text-color);
         font-size: 1.2rem; /* Smaller font size for description */
@@ -24,7 +26,8 @@
         font-size: 0.9rem; /* Adjust as needed */
     }
     .price {
-        font-size: 1.7rem; /* Smaller font size for price */
+        color: var(--mobile-text-color);
+        font-size: 1.4rem; /* Smaller font size for price */
     }
     .shipping-info {
         font-size: 1rem; /* Adjust as needed */
@@ -172,8 +175,11 @@
     }
 
     .title-text {
-        line-height: 3rem;
-        font-size: 2rem !important;
+        text-align: center;
+        color: var(--color-primary-dark);
+        line-height: 3.5rem;
+        font-size: 2.3rem !important;
+        font-family: Arial;
     }
 }
 
@@ -204,8 +210,16 @@
     .section-title-desc {
         font-size: 1.15rem;
     }
+}
 
-    .h1css {
-        font-size: 1.5rem;
+@media (min-height: 780px) and (max-width: 575.98px) {
+    .price-container {
+        margin-top: 10vh;
+    }
+}
+
+@media (min-height: 450px) and (max-height: 779px) {
+    .price-container {
+        margin-top: 3.5rem;
     }
 }
