@@ -188,6 +188,12 @@
     .price-container {
         margin-top: 3rem;
     }
+
+    
+    .contact-info {
+        height: auto;
+        padding: 2rem;
+    }
 }
 
 /* Small to Medium screens (576px to 991.98px) */
@@ -219,3 +225,14 @@
     }
 }
 
+@media (max-width: 380px) {
+    .title-text {
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+    
+    .contact-info {
+        height: auto;
+        padding: 2rem;
+    }
+} 
