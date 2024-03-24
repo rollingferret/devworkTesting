@@ -84,6 +84,7 @@
         color: var(--mobile-text-color);
         font-size: 0.9rem;
         letter-spacing: 0.5px;
+        line-height: 1.6rem;
     }
 
     .image-caption {
@@ -121,10 +122,12 @@
     .list-css {
         font-size: 1.2rem;
     }
+
     .list-css-desc {
         font-family: var(--mobile-font-family);
         color: var(--mobile-text-color);
         font-size: 1.1rem;
+        line-height: 1.6rem;
     }
 
     .lab-css {
