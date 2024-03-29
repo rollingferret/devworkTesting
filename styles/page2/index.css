@@ -1,0 +1,56 @@
+:root {
+    --header-text-color: #43BF63;
+    --secondary-text-color: #3f92d1;
+  }
+
+.large-header-text {
+    color: #F9F6EE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.4px;
+}
+
+.section-title {
+    color: var(--header-text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.4px;
+
+    .secondary {
+        color: var(--secondary-text-color)
+    }
+    
+    .sub {
+        font-size: 1.6rem;
+    }
+}
+
+.section-title-desc {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
+.cleansing-container {
+    background-color: #F4FFF7;
+}
+
+.result-list {
+    color: #525354;
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
