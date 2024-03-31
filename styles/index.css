@@ -396,3 +396,7 @@ li {
         padding: 4rem;
     }
 }
+
+.card-anchor a:hover {
+    text-decoration: underline !important;
+}
