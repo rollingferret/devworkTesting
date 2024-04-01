@@ -144,6 +144,7 @@
         font-style: normal;
         letter-spacing: 0.5px;
         text-align: left;
+        line-height: 1.7rem;
     }
 
     .review-name {
@@ -163,6 +164,7 @@
         color: var(--mobile-text-color);
         font-size: 1rem;
         font-style: italic;
+        line-height: 1.7rem;
     }
 
     .recommend-friend-css {
