@@ -1,7 +1,11 @@
 :root {
     --mobile-text-color: #000000;
     --mobile-font-family: sans-serif;
-    --color-primary-dark: #1576bf;
+    --primary: #005DA4;
+    --light: #1576bf;
+    --lighter: #3f92d1;
+    --lightest: #0094FF;
+    --dark: #153E79;
   }
 
 
