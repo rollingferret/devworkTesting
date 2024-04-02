@@ -1,6 +1,10 @@
 :root {
-    --header-text-color: #43BF63;
-    --secondary-text-color: #3f92d1;
+    --primary: #005DA4;
+    --light: #1576bf;
+    --lighter: #3f92d1;
+    --lightest: #0094FF;
+    --dark: #153E79;
+    --gray: #525354;
   }
 
 .large-header-text {
@@ -14,7 +18,7 @@
 }
 
 .section-title {
-    color: var(--header-text-color);
+    color: var(--primary);
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -23,7 +27,7 @@
     letter-spacing: 0.4px;
 
     .secondary {
-        color: var(--secondary-text-color)
+        color: var(--primary)
     }
     
     .sub {
@@ -32,7 +36,7 @@
 }
 
 .section-title-desc {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -45,12 +49,26 @@
     background-color: #F4FFF7;
 }
 
+.letter-paragraph {
+    color: var(--gray);
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.2px;
+}
+
 .result-list {
-    color: #525354;
+    color: var(--gray);
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.72px;
+}
+
+.kit-desc {
+    color: var(--primary);
 }

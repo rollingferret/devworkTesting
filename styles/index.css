@@ -1,5 +1,14 @@
+:root {
+    --primary: #005DA4;
+    --light: #1576bf;
+    --lighter: #3f92d1;
+    --lightest: #0094FF;
+    --dark: #153E79;
+  }
+
+
 .h1css {
-    color: #3f92d1; /* dark blue color */
+    color: var(--primary); /* dark blue color */
     font-family: 'Montserrat', sans-serif; /* Montserrat font, with sans-serif as a fallback */
     font-size: 2.5rem; /* 3.5rem replicates figma but feels big */
     font-style: normal; /* Normal font style */
@@ -23,11 +32,11 @@
 } */
 
 .custom-lead {
-    color: #525354;
+    color: var(--dark);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.75rem;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     line-height: normal;
     letter-spacing: 2.4px;
 }
@@ -49,7 +58,7 @@
 }
 
 .description {
-    color: #525354;
+    color: var(--dark);
     font-family: 'Lora', serif;
     font-size: 1.4rem;
     font-style: normal;
@@ -58,7 +67,7 @@
 }
 
 .custom-text-style {
-    color: #525354;
+    color: var(--dark);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -92,7 +101,7 @@
 }
 
 .custom-buy-button {
-    background-color: #43bf63;
+    background-color: #689574;
     color: #F9F6EE;
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
@@ -109,7 +118,7 @@
 .contact-info {
     width: 100%;
     height: 100px;
-    background: #3f92d1;
+    background: var(--primary);
     text-align: center;
     padding: 3rem;
 }
@@ -139,7 +148,7 @@
 }
 
 .section-title {
-    color: #3f92d1;
+    color: var(--primary);
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -149,7 +158,7 @@
 }
 
 .section-title-desc {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -159,7 +168,7 @@
 }
 
 .category-header {
-    color: #409fe3;
+    color: var(--lightest);
     font-family: 'Lora', serif;
     font-style: normal;
     font-weight: 700;
@@ -171,7 +180,7 @@
 }
 
 .parasite-list {
-    color: #525354;
+    color: var(--dark);
     font-family: 'Lora', serif;
     font-style: normal;
     font-weight: 500;
@@ -181,6 +190,7 @@
 }
 
 .image-caption {
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1rem;
     font-style: normal;
@@ -202,7 +212,7 @@ li {
 }
 
 .questions-css {
-    color: #3f92d1;
+    color: var(--lightest);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
     font-style: normal;
@@ -226,7 +236,7 @@ li {
 }
 
 .kit-desc {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -234,7 +244,7 @@ li {
 }
 
 .find-rare-parasites-title {
-    color: #3f92d1;
+    color: var(--primary);
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-style: normal;
@@ -249,8 +259,8 @@ li {
 }
 
 .list-css {
-    color: #409fe3;
-    font-family: 'Lora', serif;
+    color: var(--primary);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 600;
@@ -260,7 +270,7 @@ li {
 }
 
 .list-css-desc {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1rem;
     font-style: normal;
@@ -270,7 +280,7 @@ li {
 }
 
 .lab-css {
-    color: #3f92d1;
+    color: var(--lightest);
     font-family: 'Lora', serif;
     font-size: 1rem;
     font-style: normal;
@@ -282,7 +292,7 @@ li {
 
 
 .lab-css-desc {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1rem;
     font-style: normal;
@@ -293,7 +303,7 @@ li {
 }
 
 .review-name {
-    color: #3f92d1;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1.2rem;
     font-style: normal;
@@ -321,7 +331,7 @@ li {
 
 
 .actual-review-css {
-    color: #525354;
+    color: var(--primary);
     font-family: 'Lora', serif;
     font-size: 1.1rem;
     font-style: normal;
@@ -340,7 +350,7 @@ li {
 }
 
 .footer-bg {
-    background-color: #3f92d1; /* Adjust the color to match your design */
+    background-color: var(--primary); /* Adjust the color to match your design */
     text-align: center;
     padding: 1.25rem 0; /* Adjust padding as needed */
 }

@@ -1,7 +1,11 @@
 :root {
     --mobile-text-color: #000000;
     --mobile-font-family: sans-serif;
-    --color-primary-dark: #1576bf;
+    --primary: #005DA4;
+    --light: #1576bf;
+    --lighter: #3f92d1;
+    --lightest: #0094FF;
+    --dark: #153E79;
   }
 
 /* font-family: 'Montserrat', sans-serif; */
@@ -14,6 +18,7 @@
     }
     .custom-lead {
         color: var(--mobile-text-color);
+        font-weight: bold;
         font-size: 1.2rem; /* Smaller font size for custom lead */
     }
     .description {
@@ -34,6 +39,7 @@
         font-size: 1rem; /* Adjust as needed */
     }
     .custom-buy-button {
+        background-color: #43bf63;
         font-size: 1.6rem; /* Smaller font size for button */
         padding: 1rem 1rem; /* Adjust padding as needed */
     }
@@ -62,6 +68,7 @@
     }
 
     .section-title {
+        color: var(--lighter);
         font-size: 1.2rem;
         letter-spacing: 0.3px;
     }
@@ -74,6 +81,7 @@
     }
 
     .category-header {
+        color: #409fe3;
         font-size: 1.2rem;
         letter-spacing: 1.8px;
         text-align: left;
@@ -109,7 +117,7 @@
     }
 
     .bg-section {
-        background-color: #3f92d1;
+        background-color: var(--lighter);
     }
 
     .find-rare-parasites-title {
@@ -120,6 +128,8 @@
     }
 
     .list-css {
+        color: #409fe3;
+        font-family: 'Lora', serif;
         font-size: 1.2rem;
     }
 
@@ -184,7 +194,7 @@
 
     .title-text {
         text-align: center;
-        color: var(--color-primary-dark);
+        color: var(--light);
         line-height: 3.5rem;
         font-size: 1.8rem !important;
         font-family: Arial;
@@ -196,6 +206,7 @@
 
     
     .contact-info {
+        background: var(--lighter);
         height: auto;
         padding: 2rem;
     }
